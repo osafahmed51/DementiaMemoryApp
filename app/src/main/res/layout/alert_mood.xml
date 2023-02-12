@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cardvalertmood"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_margin="@dimen/fifteen_dp"
+        app:cardElevation="@dimen/four_dp"
+        app:strokeColor="#656161"
+        app:strokeWidth="2dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/twentyfour"
+            android:paddingRight="@dimen/twentyfour">
+
+            <ImageView
+                android:id="@+id/ivCloseAlertDialog"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginTop="@dimen/twentyfour"
+                android:gravity="end"
+                android:padding="@dimen/eight_dp"
+                android:src="@drawable/ic_baseline_close_24"
+                app:tint="@color/design_default_color_error" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/twentyfour"
+                android:orientation="horizontal"
+                android:padding="@dimen/eight_dp"
+                android:weightSum="1">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".25"
+                    android:src="@drawable/happy" />
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".25"
+                    android:src="@drawable/sad" />
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".25"
+                    android:src="@drawable/irritated" />
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".25"
+                    android:src="@drawable/sleepy" />
+
+            </LinearLayout>
+
+            <com.google.android.material.slider.Slider
+                android:id="@+id/sliderTrackMood"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:stepSize="25"
+                android:valueFrom="0.0"
+                android:valueTo="100"
+                app:tickColorInactive="@color/design_default_color_error" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnSubmit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/eight_dp"
+                android:layout_marginBottom="@dimen/thirty"
+                android:text="Submit"
+                app:cornerRadius="@dimen/eight_dp" />
+
+        </LinearLayout>
+
+
+    </com.google.android.material.card.MaterialCardView>
+
+
+        <VideoView
+            android:id="@+id/videov1"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:visibility="gone" />
+
+</RelativeLayout>

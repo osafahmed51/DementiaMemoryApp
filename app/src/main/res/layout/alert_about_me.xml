@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/alertAboutMe"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_margin="@dimen/fifteen_dp"
+        app:cardElevation="@dimen/four_dp"
+        app:strokeColor="#656161"
+        app:strokeWidth="2dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/mainContent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/eight_dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/tvAboutMe"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/twentyfour"
+                        android:fontFamily="@font/abel"
+                        android:gravity="center"
+                        android:text="About Me"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/twentyfour" />
+
+                    <ImageView
+                        android:id="@+id/ivCloseAlertDialog"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignRight="@id/tvAboutMe"
+                        android:gravity="center"
+                        android:padding="@dimen/eight_dp"
+                        android:src="@drawable/ic_baseline_close_24"
+                        app:tint="@color/design_default_color_error" />
+
+                </RelativeLayout>
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etAboutMe"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/eight_dp"
+                    android:hint="About Me"
+                    android:inputType="textMultiLine"
+                    android:maxLines="6"
+                    android:minLines="6"
+                    android:paddingBottom="@dimen/thirty"
+                    android:scrollbars="vertical" />
+            </LinearLayout>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnSubmit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/mainContent"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/eight_dp"
+                android:layout_marginBottom="@dimen/thirty"
+                android:gravity="center"
+                android:text="Submit"
+                app:cornerRadius="@dimen/eight_dp" />
+
+
+        </RelativeLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+</RelativeLayout>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/forgotPassLay"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_margin="@dimen/fifteen_dp"
+        app:cardElevation="@dimen/four_dp"
+        app:strokeColor="#656161"
+        app:strokeWidth="2dp">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/eight_dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/twentyfour"
+        android:fontFamily="@font/abel"
+        android:gravity="center"
+        android:text="Forgot Password"
+        android:textColor="@color/black"
+        android:textSize="@dimen/twentyfour" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etEmailFP"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/eight_dp"
+            android:hint="Enter Email Id"
+            android:inputType="textEmailAddress"></com.google.android.material.textfield.TextInputEditText>
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnSubmitFP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/eight_dp"
+            android:text="Submit"
+            app:cornerRadius="@dimen/eight_dp"></com.google.android.material.button.MaterialButton>
+
+    </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+</RelativeLayout>

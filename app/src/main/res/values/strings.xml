@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">DMEMORY</string>
+
+
+    <style name="CustomAlertDialogStyle">
+        <item name="android:bottomBright">@color/transparent</item>
+        <item name="android:bottomDark">@color/transparent</item>
+        <item name="android:bottomMedium">@color/transparent</item>
+        <item name="android:centerBright">@color/transparent</item>
+        <item name="android:centerDark">@color/transparent</item>
+        <item name="android:centerMedium">@color/transparent</item>
+        <item name="android:fullBright">@color/transparent</item>
+        <item name="android:fullDark">@color/transparent</item>
+        <item name="android:topBright">@color/transparent</item>
+        <item name="android:topDark">@color/transparent</item>
+    </style>
+
+    <string name="title_activity_location">location</string>
+    <string name="title_activity_maps">MapsActivity</string>
+    <string name="maps_api_key">AIzaSyD6CR7DF6Idvb7dgSCANmldAWskPQ-832s</string>
+    <string name="pick_place">Pick Places</string>
+    <string name="default_info_title">Defalut Location</string>
+    <string name="default_info_snippet">Defalut snippet</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>
